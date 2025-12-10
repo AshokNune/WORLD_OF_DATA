@@ -2,7 +2,8 @@
 
 This document explains the concentric layers of Artificial Intelligence technologies and, crucially, how every single layer is built upon the foundations of **Statistics**.
 
-![AI Hierarchy Diagram](image_98b78b.png)
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/31b88487-7459-4593-87fa-534e077c5042" />
+
 *(Reference: Concentric circles diagram showing AI > ML > NN > DL > GenAI > LLMs)*
 
 ---
