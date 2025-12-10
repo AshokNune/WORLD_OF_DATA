@@ -34,5 +34,82 @@ A reference list of models that bridge Statistics and Machine Learning.
 | **K-Means** | Variance Minimization | Clustering | Customer Segmentation |
 | **PCA** | Eigenvectors | Dimensionality Reduction | Image Compression |
 | **ARIMA** | Autocorrelation | Time Series Forecasting | Stock Price Prediction |
+
+# Comprehensive Guide to Statistical & Machine Learning Models
+
+This document categorizes the major models used in Data Science and Engineering. The models are grouped by **Family** (the type of problem they solve) and described by their **Statistical Origin** (Theory) vs. **Machine Learning Use** (Application).
+
+---
+
+## 1. The Regression Family (Predicting Numbers)
+**Goal:** Estimate a continuous value (e.g., Price, Temperature, Speed) based on input variables.
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **Linear Regression (OLS)** | The standard method to measure correlation between variables. | The "baseline" model for any prediction task. |
+| **Ridge Regression (L2)** | Linear regression with a penalty for coefficients to fix "multicollinearity." | Used to prevent "overfitting" on datasets with many noisy features. |
+| **Lasso Regression (L1)** | Linear regression that shrinks some coefficients to absolute zero. | Automated "Feature Selection" (dropping useless variables). |
+| **Elastic Net** | A hybrid of Ridge and Lasso penalties. | Robust prediction when variables are highly correlated (e.g., genomic data). |
+| **Polynomial Regression** | Fitting a curve ($X^2, X^3$) instead of a straight line. | Modeling complex, non-linear growth patterns (e.g., epidemics). |
+| **Poisson Regression** | Part of Generalized Linear Models (GLM) for count data. | Predicting discrete counts (e.g., "How many clicks will this ad get?"). |
+| **Gamma Regression** | GLM for continuous, positive, skewed data. | Predicting insurance claim amounts or wait times. |
+
+---
+
+## 2. The Classification Family (Predicting Categories)
+**Goal:** Predict which category an item belongs to (e.g., Yes/No, Spam/Not Spam, A/B/C).
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **Logistic Regression** | Predicting binary outcomes using odds ratios. | The standard "Yes/No" classifier (e.g., Fraud vs. Legit). |
+| **Multinomial Logistic** | Extension of Logistic for 3+ categories. | Classifying things into multiple buckets (e.g., Low vs. Medium vs. High Risk). |
+| **Naive Bayes** | Based on Bayes' Theorem of conditional probability. | Text classification and Spam filtering (very fast, requires little data). |
+| **LDA (Linear Discriminant Analysis)** | Finds a linear combination of features that separates classes. | Dimensionality reduction and classification for normally distributed data. |
+| **QDA (Quadratic Discriminant Analysis)** | Similar to LDA but allows for curved boundaries. | Classification when the data variance is different across groups. |
+
+---
+
+## 3. The "Non-Parametric" Family (Pattern Recognition)
+**Goal:** Find patterns without assuming a strict formula (like a line or curve). These let the data determine the shape.
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **k-Nearest Neighbors (k-NN)** | A method of estimation based on local density. | Simple classification & recommendation ("Users like you also bought..."). |
+| **Kernel Density Estimation (KDE)** | A way to smooth out a histogram to estimate probability. | Anomaly detection and visualizing data distributions. |
+| **CART (Decision Trees)** | Using statistical tests (Gini Impurity) to split data recursively. | The foundation for modern Random Forests and Gradient Boosting models. |
+| **CHAID** | Using Chi-Square tests to build decision trees. | Market segmentation (finding distinct groups of customers). |
+
+---
+
+## 4. The Dimensionality Family (Simplifying Data)
+**Goal:** Reduce the number of variables (columns) in a dataset while keeping the important information.
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **PCA (Principal Component Analysis)** | Orthogonal transformation to find variance/eigenvectors. | Compressing data before feeding it into a Neural Network. |
+| **Factor Analysis** | Identifying underlying "latent" variables that cause correlations. | Survey analysis (grouping similar questions together). |
+| **SVD (Singular Value Decomposition)** | Matrix factorization. | Recommender Systems (basis for matrix completion algorithms). |
+
+---
+
+## 5. The Time-Series Family (Forecasting)
+**Goal:** Predict future values based on past time-stamped data.
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **ARIMA** | AutoRegressive Integrated Moving Average. | Forecasting sales, stock prices, or server load. |
+| **SARIMA** | ARIMA with a "Seasonal" component. | Forecasting things with cycles (e.g., ice cream sales in summer). |
+| **Holt-Winters (Exponential Smoothing)** | Weighted averages of past data (recent data matters more). | Simple, fast forecasting for business dashboards. |
+| **GARCH** | Modeling the variance (volatility) of a series. | Risk management (predicting how "risky" a stock will be tomorrow). |
+
+---
+
+## 6. The Survival Family (Time-to-Event)
+**Goal:** Predict the time until an event occurs (e.g., Death, Failure, Cancellation).
+
+| Model | Statistical Origin | Machine Learning Use |
+| :--- | :--- | :--- |
+| **Kaplan-Meier Estimator** | Non-parametric statistic to estimate the survival function. | Measuring customer retention rates over time. |
+| **Cox Proportional Hazards** | Semiparametric regression for survival times. | Predicting "churn" (when a customer will likely unsubscribe). |
 | **Cox Hazards** | Survival Analysis | Time-to-Event | Predicting Customer Churn |
 
