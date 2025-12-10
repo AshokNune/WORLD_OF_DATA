@@ -113,3 +113,49 @@ This document categorizes the major models used in Data Science and Engineering.
 | **Cox Proportional Hazards** | Semiparametric regression for survival times. | Predicting "churn" (when a customer will likely unsubscribe). |
 | **Cox Hazards** | Survival Analysis | Time-to-Event | Predicting Customer Churn |
 
+---
+
+# Part 2: Advanced & Modern Machine Learning Models
+
+While the models above are the statistical foundation, the following families dominate modern **Kaggle competitions**, **Generative AI**, and **Complex Systems**.
+
+## 7. The Ensemble Family (The "Kaggle Winners")
+**Goal:** Combine multiple weak models (usually Decision Trees) to create one super-powerful predictor. Ideally suited for **Tabular Data** (Excel/SQL tables).
+
+| Model | Description | Use Case |
+| :--- | :--- | :--- |
+| **XGBoost** (Extreme Gradient Boosting) | Builds trees sequentially, where each new tree fixes the errors of the previous one. | The industry standard for winning data science competitions on structured data. |
+| **LightGBM** | A faster, more memory-efficient version of Gradient Boosting developed by Microsoft. | High-speed training on massive datasets (millions of rows); popular in Finance. |
+| **CatBoost** | Gradient boosting optimized for "Categorical" variables (text labels) without needing pre-processing. | Datasets with many non-numeric columns (e.g., "City", "Product Type"). |
+| **Isolation Forest** | Instead of classifying "normal" data, it isolates "weird" points by randomly splitting data. | **Anomaly Detection:** Catching credit card fraud or server hacking attempts. |
+
+
+
+## 8. The Deep Learning Family (The "Neural Net Zoo")
+**Goal:** Mimic the human brain to solve perceptual problems. Ideally suited for **Unstructured Data** (Images, Audio, Text).
+
+| Model | Description | Use Case |
+| :--- | :--- | :--- |
+| **CNN** (Convolutional Neural Network) | Scans data like a grid (pixels) to find spatial patterns. | **Computer Vision:** Facial recognition, Medical imaging (X-Rays), Self-driving cars. |
+| **RNN / LSTM** (Long Short-Term Memory) | Neural networks with "memory" loops to understand sequences. | **Time-Series:** Voice recognition (older Siri), Predicting heart failure from ECGs. |
+| **Transformers** (The "T" in GPT) | Uses "Attention Mechanisms" to weigh the importance of different parts of input simultaneously. | **Generative AI:** ChatGPT, Language Translation, Summarization, Coding assistants. |
+| **GANs** (Generative Adversarial Networks) | Two models fight: a "Generator" creates fakes, a "Discriminator" tries to spot them. | **Deepfakes:** Creating realistic images, synthetic data generation, Art. |
+
+
+
+## 9. The Reinforcement Learning Family (The "Robot Brain")
+**Goal:** Learn a strategy (policy) by trial-and-error in an interactive environment.
+
+| Model | Description | Use Case |
+| :--- | :--- | :--- |
+| **Q-Learning** | Learns a "Cheat Sheet" (Q-Table) of the best action to take in every possible state. | Simple game AI, Inventory management optimization. |
+| **DQN** (Deep Q-Network) | Uses a Neural Network to estimate the best action when the world is too complex for a table. | Complex Video Game AI (e.g., playing Atari), Traffic light control systems. |
+| **PPO** (Proximal Policy Optimization) | Optimizes the agent's behavior strategy directly to ensure stable learning. | **Robotics:** Training robot arms to grasp objects; OpenAI Five (Dota 2). |
+
+## 10. The Graph Family (The "Network")
+**Goal:** Analyze relationships (edges) between entities (nodes). Standard models treat rows as independent; these treat them as connected.
+
+| Model | Description | Use Case |
+| :--- | :--- | :--- |
+| **PageRank** | Measures the importance of a node based on the quality of incoming links. | **Search Engines:** Google Search ranking; Social Network influencer analysis. |
+| **GNN** (Graph Neural Networks) | Applies Deep Learning concepts to graph structures. | **Drug Discovery:** Predicting how molecules interact; Recommendation systems (Pinterest). |
