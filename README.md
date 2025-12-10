@@ -1,4 +1,7 @@
-# Statistical Models vs. Machine Learning: A Developer's Guide
+# Statistical Models vs. Machine Learning
+
+<img width="609" height="481" alt="image" src="https://github.com/user-attachments/assets/31b88487-7459-4593-87fa-534e077c5042" />
+
 
 This document summarizes the core differences, intersections, and practical applications of Statistical Models and Machine Learning (ML), tailored for Data Engineers and Developers.
 
