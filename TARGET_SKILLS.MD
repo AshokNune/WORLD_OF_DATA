@@ -1,5 +1,7 @@
-### Key Functions
-1.  **PANDAS** .
-2.  **MACHINE LEARNING**
-3.  **SQL:** 
-4.  **PYTHON**
+Tabular Data? You will use XGBoost or Regression.
+
+Images? You will use CNNs or Transformers.
+
+Text? You will use Transformers (LLMs).
+
+Simulation? You will use Monte Carlo.
