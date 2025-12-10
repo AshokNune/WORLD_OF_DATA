@@ -67,11 +67,3 @@ We start from the broadest concept and drill down to the most specific modern te
 
 ---
 
-## 3. Note for Data Engineers
-
-Even the most advanced AI is just performing statistical calculations on the data provided.
-
-> **"Garbage In, Garbage Out"**
-
-* If the pipeline feeds the model **statistically skewed data**, the model will output **biased answers**.
-* As a Data Engineer, you are the guardian of the **statistical quality** of the data that fuels these layers.
